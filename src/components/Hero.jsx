@@ -1,49 +1,55 @@
 import MaPrint from "/icons/headLogo.png";
 import Brosur from "/images/brosur.png";
+import Wa from "/icons/whatsapp.png";
+import Ig from "/icons/instagram.png";
+import Tiktok from "/icons/tiktok.png";
+import Katalog from "/images/katalog.pdf";
 
 const Hero = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col lg:flex-col">
         <img src={MaPrint} alt="Maba Printing" className="h-auto w-25" />
         <h3>Usaha yang dikelola 100% oleh mahasiswa🕺</h3>
         <img
           alt="Brosur"
           src={Brosur}
-          className="lg:w-45 w-auto rounded-lg shadow-2xl"
+          className="lg:w-60 md:w-45 w-auto rounded-lg shadow-2xl"
         />
-        <div>
-          <h1 className="text-5xl font-bold text-center">Box Office News!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-soft bg-green-600 text-white w-full">
+        <div className="grid grid-cols-1 gap-4">
+          <button className="btn btn-soft w-full">
+            <img src={Wa} alt="WhatsApp" className="h-6 w-6 mr-2" />
             <a
               href="https://wa.me/6281367406166"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Whatsapp
+              Pesan/tanya langsung di sini!
             </a>
           </button>
-          <button className="btn btn-soft bg-blue-600 text-white w-full">
+          <button className="btn btn-soft w-full">
+            <img src={Ig} alt="Instagram" className="h-6 w-6 mr-2" />
             <a
-              href="https://instagram.com/fr_3525?dlrf=cmVzcjFyZ2ZxNmwy"
+              href="https://www.instagram.com/mabaprinting_ubb"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              Kepoin IG nya dulu bolehh
             </a>
           </button>
-          <button className="btn btn-soft bg-red-600 text-white w-full">
+          <button className="btn btn-soft w-full">
+            <img src={Tiktok} alt="Tiktok" className="h-6 w-6 mr-2" />
             <a
-              href="https://tiktok.com/@fr_3525"
+              href="https://www.tiktok.com/@mabaprinting.ubb"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Tiktok
+              Scroll Tiktok sinii
+            </a>
+          </button>
+          <button className="btn btn-soft w-full">
+            <a href={Katalog} target="_blank" rel="noopener noreferrer">
+              Katalog Harga
             </a>
           </button>
         </div>
